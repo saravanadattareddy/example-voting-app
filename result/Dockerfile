@@ -21,5 +21,5 @@ COPY . .
 ENV PORT=80
 EXPOSE 80
 
-ENTRYPOINT ["/usr/bin/tini", "--"]
+ENTRYPOINT ["/usr/bin/docker", "--"]
 CMD ["node", "server.js"]
